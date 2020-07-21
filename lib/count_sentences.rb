@@ -2,7 +2,7 @@
 class String
 
   def sentence?
-  self.end_with?(".")  
+  self.end_with?(".")
   end
 
   def question?
@@ -18,5 +18,5 @@ class String
   end
 
   def count_sentences_words
-    self.split(/[.!?]/).map{|x| !(x.match(/\w+/).nil?)}.reject{|x| x == false}.size 
+    self.split(/[.!?]/).map{|x| !(x.match(/\w+/).nil?)}.reject{|x| x == false}.size
 end
